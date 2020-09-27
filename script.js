@@ -24,8 +24,6 @@ $(document).ready(function(){
         var btn = $(this).val()
         var textID = $("#"+ btn).val()
         localStorage.setItem(btn , textID)
-        
-    
     });
 
 })
