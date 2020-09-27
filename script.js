@@ -6,10 +6,10 @@ $(document).ready(function(){
     textarea.each(function(){
         
         for(var i = 0; i < textarea.length; i++){
-            if(hour === $(textarea[i]).attr("value")){
+            if(hour === $(textarea[i]).attr("value")* 1){
                 textarea[i].setAttribute("class", "present col-md-10 textarea")
             }
-            else if(hour > $(textarea[i]).attr("value")){
+            else if(hour > $(textarea[i]).attr("value")* 1){
                 textarea[i].setAttribute("class", "past col-md-10 textarea")
             }
             else{
