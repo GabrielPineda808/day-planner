@@ -15,7 +15,7 @@ $(document).ready(function(){
             else{
                 textarea[i].setAttribute("class", "future col-md-10 textarea")
             }
-            
+            $(textarea[i]).val(localStorage.getItem($(textarea[i]).attr("id")))
         }
         
     })
